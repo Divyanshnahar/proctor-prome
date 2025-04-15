@@ -143,12 +143,12 @@ class LoginPage(QtWidgets.QWidget):
                 self.main_window.current_user = username
                 self.main_window.current_user_type = user_type
                 
-                # msg = QtWidgets.QMessageBox()
-                # msg.setStyleSheet(COMMON_STYLES['message_box'])
-                # msg.setWindowTitle("Success")
-                # msg.setText("Login successful!")
-                # msg.setIcon(QtWidgets.QMessageBox.Icon.Information)
-                # msg.exec()
+                msg = QtWidgets.QMessageBox()
+                msg.setStyleSheet(COMMON_STYLES['message_box'])
+                msg.setWindowTitle("Success")
+                msg.setText("Login successful!")
+                msg.setIcon(QtWidgets.QMessageBox.Icon.Information)
+                msg.exec()
                 
                 if user_type == 'Teacher':
                     self.main_window.teacher_dashboard.username = username  # Set username in teacher dashboard
